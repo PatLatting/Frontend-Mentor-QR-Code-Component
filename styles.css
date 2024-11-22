@@ -1,0 +1,61 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: var(--slate-300);
+    height: 100vh;
+    font-family: outfit, sans-serif;
+    overflow: hidden;
+}
+
+/* QR Code Component */
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background: var(--white);
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+}
+
+#card img {
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+/* Content Container*/
+.content {
+    width: 100%;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.title {
+    color: var(--slate-900);
+    font-size: 22px;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.description {
+    color: var(--slate-500);
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: .2px;
+}
